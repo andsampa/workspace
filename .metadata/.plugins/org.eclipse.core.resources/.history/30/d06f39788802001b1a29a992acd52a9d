@@ -1,0 +1,43 @@
+package decisao;
+
+import javax.swing.JOptionPane;
+
+public class Lista2Exercicio1 {
+	
+	public static void main(String[] args) {
+		
+		String hospede = JOptionPane.showInputDialog("Digite o nome do hospede").toUpperCase();
+		float diaria = Float.parseFloat(JOptionPane.showInputDialog("Digite a valor diaria"));
+		float quantidade = Float.parseFloat(JOptionPane.showInputDialog("Digite a quantidade de diaria"));
+		float valorServicos=0;
+		float valorDiaria=0;
+		
+		valorDiaria = diaria * quantidade;
+		
+		if (quantidade>15) {
+			valorServicos = diaria *(float) 5.50;
+		}
+		
+		else if (quantidade == 15) {
+			valorServicos = diaria * 6;
+		}
+		
+		else if (quantidade<15) {
+			valorServicos = diaria * 8;
+		}
+		
+			
+		System.out.println("Nome do Hosped....: " + hospede);		
+		System.out.println("Valor da Diarias..:" + valorDiaria);
+		System.out.println("Valor dos Servicos:" + valorServicos);
+		System.out.println("Valor Total.......: " + (valorDiaria + valorServicos));
+		
+	}
+		}
+		
+		
+		
+
+	
+
+

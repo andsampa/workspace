@@ -1,0 +1,15 @@
+package br.com.universidade.implementacao;
+
+import br.com.universidade.modelo.Aluno;
+
+public class TesteAluno {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+ //<criando objeto>   <instanciando>
+		Aluno aluno = new Aluno();
+
+	}
+
+}

@@ -1,0 +1,27 @@
+package br.com.lojauati.teste;
+
+import javax.swing.JOptionPane;
+
+import br.com.lojauati.modelo.Formula1;
+
+public class TesteFormula1 {
+
+	public static void main(String[] args) {
+		/*
+		 * control+shift+o importar
+		 * Nesse caso instanciando um objeto
+		 * ex. instanciamento: criar todas as paredes interna das casas
+		 */
+		Formula1 objeto; //criando um objeto - ele buscar no projeto o arquivo 
+		                 //ex. criar casa somente com as paredes externas
+		// objeto.preencherEscuderia("ferrari")- Não funciona naçoa foi instanciado
+		
+		Formula1 carro = new Formula1(); 
+		
+		
+		carro.preencherEscuderia(JOptionPane.showInputDialog("Digite a escuderia"));
+		System.out.println(carro.exibirEscuderia());
+		
+			}
+
+}

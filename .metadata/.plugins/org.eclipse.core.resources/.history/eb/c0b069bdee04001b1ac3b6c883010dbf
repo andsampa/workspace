@@ -1,0 +1,39 @@
+package br.com.universidade.implementacao;
+
+
+import br.com.universidade.modelo.Bacharelado;
+import br.com.universidade.modelo.Medio;
+import br.com.universidade.modelo.Pos;
+
+public class TesteFormacao {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		char opcao = Magica.s("Digite\n<1> Medio\n<2> Bacharelado\n<3 POS" ).charAt(0);
+		Formacao formacao=null;
+		
+		if (opcao == '1' ) {
+			formacao = new Medio (
+					Magica.i("Tipo"));
+		} else if (opcao == '2') {
+			formacao = new Bacharelado (
+					Magica.s("ProjetoConlusao"),
+					Magica.i("CargaHorarioEstacio"));
+		} else if (opcao == '3') {
+							formacao = new Pos (
+							Magica.s("Nivel"),
+							Magica.b("PlanoEstendido"));
+		}
+		
+		System.out.println(formacao.getAll);
+		
+		}
+		
+		
+		
+		
+
+	}
+
+}

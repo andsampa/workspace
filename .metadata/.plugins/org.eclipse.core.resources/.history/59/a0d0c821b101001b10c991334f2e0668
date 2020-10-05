@@ -1,0 +1,43 @@
+package variaveis;
+
+public class Variavel {
+	//Variavel é um espaço temporário na memoria RAM onde
+	// você armazena UM dado.
+	public static void main(String[] args) {
+		//Sintaxe para criar variaveis
+		//<tipo do dado> <nome da variavel>;
+		
+		/*
+		 * Tipos de Dados:
+		 * A-) Numerico (int (inteiro) / double (quebrado): o dado que será utilizado em uma operação matemática e/ou 
+		 * for um dado critico para consulta
+		 * CEP (Contexto no site do correio) principal dado para correio como alfanumerico gera
+		 * lentidão
+		 * 
+		 * 
+		 * B-) Alfanumérico (String): não é utilizado para operações matemáticas.
+		 * CEP= 00010-009 => 00010-009
+		 * CEP (contexto aplicação do RH do Itau-Unibanco) pouco utilizado
+		 * 
+		 * Devemos analisar qual o melhor metodo (numerico ou alfanumerico) a ser usado utilizando
+		 *  o nivel de acessos
+		 *  
+		 */
+			 
+		String nome=""; 
+		int idade = 0 ;
+		double altura=0;
+		
+		nome="Anderson Sampaio";
+		idade = 47;
+		altura = 1,74;
+		
+		System.out.print(nome);
+		System.out.print(idade);
+		System.out.print(altura);
+		
+		
+
+	}
+
+}

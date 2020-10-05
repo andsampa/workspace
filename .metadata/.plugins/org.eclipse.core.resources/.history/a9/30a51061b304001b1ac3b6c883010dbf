@@ -1,0 +1,65 @@
+package br.com.ecommerce.implantacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.ecommerce.modelo.Cliente;
+import br.com.ecommerce.modelo.Endereco;
+import br.com.ecommerce.modelo.Produto;
+import br.com.ecommerce.modelo.Venda;
+
+public class VendaTeste {
+	
+	public static String s (String msg) {
+		return JOptionPane.showInputDialog(msg).toUpperCase();
+	}
+	
+	public static int i (String msg) {
+		return Integer.parseInt(msg);
+	}
+		
+	public static float f (String msg) {
+		return Float.parseFloat(msg);
+	}
+		
+	
+
+	public static void main(String[] args) {
+		/*
+		 * metodo static = 
+		 */
+			
+		Venda venda = new Venda();
+		Produto produto = new Produto();
+		Cliente cliente =new Cliente ();
+		Endereco endereco = new Endereco();
+		
+		cliente.setEndereco(endereco);
+		venda.setCliente(cliente);
+		venda.setProduto(produto);
+		
+		endereco.setLogradouro(s ("Logradouro"));
+		endereco.setNumero(s("Numero"));	
+		endereco.setCidade(s("Cidade"));
+		
+		
+		//preencheria todos de endereco
+		
+		produto.setDescricao("Churros");
+		produto.setQtde(10);
+		produto.setValorVenda(15);
+		//preencheria todos os de produto
+		
+		venda.setTotal(150);
+		venda.setData("02/10/2020");
+		venda.setNotafiscal(15);
+		//preencheria todos de venda
+		
+		System.out.println(venda.getAll());
+		
+		
+		
+		
+		
+	}
+}
+

@@ -1,0 +1,28 @@
+package br.com.lojauati.modelo;
+
+public class Elevador {
+	
+	//Atributos
+
+		private int qtdePessoas;
+		private int capacidadePessoas;
+		private int andarAtual;
+		private int maiorAndar;
+		private int menorAndar;
+		
+		
+		//<modificador> <tipo retorno> <nome> (<tipo param> nome param>)
+		
+		public void preencherMaiorAndar (int pAndar) {
+			
+			if (pAndar>menorAndar) {
+			
+			//atributo + parametro
+			  maiorAndar=pAndar;			
+		}
+		
+}		public void preencherMenor (int mAndar) {
+	
+		if (mAndar<=pAndar) {
+			menorAndar=mAndar;
+		}

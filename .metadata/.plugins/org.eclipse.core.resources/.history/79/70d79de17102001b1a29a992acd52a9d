@@ -1,0 +1,62 @@
+package decisao;
+
+import javax.swing.JOptionPane;
+
+public class DecisaoEncadeada {
+	/*
+	 * Identificadores = nomes (classe, variavel..)
+	 * Regras : 
+	 * 1ª Não começaras com numero...1berto (errado)
+	 * 2º Não usaras caracteres especias(@,#,~ , ... ) Exceção : underline (_)
+	 * 3º Não utilizaras palavras reservadas (class, int, double, main, public..)
+	 * 
+	 * Padroes (variaveis):
+	 * - Nomes significativos 
+	 * - variaveis sempre começam com letra minusculas
+	 * - utilizar o padrão Camel Case (ex. nomeDoCliente, nomeDoClientePessoaFisica ) com exceção da 1º palavras as 
+	 * demais iniciam com letra maiuscula ou utiliza o underline (_) entre as palavras (nome_do_cliente)
+	 * 
+	 * Dicas
+	 * toUpperCase = mostra maiusculo
+	 * if= se
+	 * and => em java && 
+	 * or => no java ||  (pip)
+	 */
+
+	public static void main(String[] args) {
+		
+		String nome = JOptionPane.showInputDialog("Digite o nome do aluno").toUpperCase();
+		int falta = Integer.parseInt(JOptionPane.showInputDialog("Digite a quantidade de faltas"));
+		if (falta>20) {
+			System.out.println("Infelizmente.." + nome + "você esta reprovado por falta!!!");
+		} else {
+			
+		float nota1 = Float.parseFloat(JOptionPane.showInputDialog("Digite a nota 1"));
+		float nota2 = Float.parseFloat(JOptionPane.showInputDialog("Digite a nota 2"));
+		
+		float media = (nota1 + nota2)/ 2;
+		
+	
+		System.out.println("Aluno: " + nome + "...sua média foi : " + media + "..suas faltas" + falta);		
+		
+				
+		if (media>=6) {
+			System.out.println("Parabens.." + nome + "você esta aprovado!!!");
+		} 
+				
+		else if (media<4) {
+			System.out.println("Infelizmente.." + nome + "você foi reprovado!!!");
+			} 
+		
+		else if (media>6 || media>=4) {
+			System.out.println(nome + "..Você ainda tem chance no exame");
+		}
+		
+		}
+		
+		
+	}
+
+	}
+
+

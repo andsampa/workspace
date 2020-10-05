@@ -1,0 +1,49 @@
+package variaveis;
+
+import javax.swing.JOptionPane;
+
+public class Variavel {
+	//Variavel é um espaço temporário na memoria RAM onde
+	// você armazena UM dado.
+	public static void main(String[] args) {
+		//Sintaxe para criar variaveis
+		//<tipo do dado> <nome da variavel>;
+		
+		/*
+		 * Tipos de Dados:
+		 * A-) Numerico (int (inteiro) / double (quebrado): o dado que será utilizado em uma operação matemática e/ou 
+		 * for um dado critico para consulta
+		 * CEP (Contexto no site do correio) principal dado para correio como alfanumerico gera
+		 * lentidão
+		 * 
+		 * 
+		 * B-) Alfanumérico (String): não é utilizado para operações matemáticas.
+		 * CEP= 00010-009 => 00010-009
+		 * CEP (contexto aplicação do RH do Itau-Unibanco) pouco utilizado
+		 * 
+		 * Devemos analisar qual o melhor metodo (numerico ou alfanumerico) a ser usado utilizando
+		 *  o nivel de acessos
+		 *  
+		 *  parse = conversão
+		 *  para convertes (parse), uma string para um tipo primitivo,utilizamos
+		 *  as classes "Wrapper"s", confrme o tipo primitivo
+		 *  
+		 */
+			 
+		String nome=""; // String tipo de dado por Referencia (pq ele é uma classe)
+		int idade = 0 ; // tipo numerico inteiro
+		double altura=0; //tipo numerico real primitivo
+		
+		nome = JOptionPane.showInputDialog("Digite seu nome");
+		idade = Integer.parseInt(JOptionPane.showInputDialog("Digite sua idade"));
+		altura =Double.parseDouble(JOptionPane.showInputDialog("Digite a altura"));
+		
+		System.out.println("Nome...: "+ nome);
+		System.out.println("Idade..: " + idade);
+		System.out.println("Altura..: " + altura);
+		
+		
+
+	}
+
+}

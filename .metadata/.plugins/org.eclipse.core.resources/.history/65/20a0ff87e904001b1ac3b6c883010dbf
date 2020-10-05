@@ -1,0 +1,15 @@
+package br.com.universidade.modelo;
+
+public class Turma {
+	
+	private String nome;
+	private String periodo;
+	
+	
+	
+	Curso curso= new Curso ();
+	Aluno aluno= new Aluno();
+	Professor professor=new Professor();
+	
+
+}

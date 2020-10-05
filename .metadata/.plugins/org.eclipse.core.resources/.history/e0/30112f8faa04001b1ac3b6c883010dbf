@@ -1,0 +1,18 @@
+package br.com.ecommerce.implantacao;
+
+import br.com.ecommerce.modelo.Cliente;
+import br.com.ecommerce.modelo.Produto;
+
+public class ProdutoTeste {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Cliente cl= new Cliente ();
+		Produto pd= new Produto ();
+		
+		
+
+	}
+
+}

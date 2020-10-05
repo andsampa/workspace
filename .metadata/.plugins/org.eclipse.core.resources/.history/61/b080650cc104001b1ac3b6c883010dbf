@@ -1,0 +1,10 @@
+package br.com.ecommerce.implantacao;
+
+public class ImplementarVendarConstrutor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

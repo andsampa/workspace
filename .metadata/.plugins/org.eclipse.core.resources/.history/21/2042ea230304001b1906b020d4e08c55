@@ -1,0 +1,11 @@
+package br.com.lojauati.modelo;
+
+public class TesteTelevisao {
+
+	public static void main(String[] args) {
+		
+		Televisao TV = new Televisao
+
+	}
+
+}

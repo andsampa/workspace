@@ -1,0 +1,54 @@
+package br.com.ecommerce.implantacao;
+
+import br.com.ecommerce.modelo.Cliente;
+import br.com.ecommerce.modelo.Endereco;
+import br.com.ecommerce.modelo.Produto;
+import br.com.ecommerce.modelo.Venda;
+import br.com.ecommerce.tela.Magica;
+
+public class VendaTeste {
+	
+	
+		
+	
+
+	public static void main(String[] args) {
+		/*
+		 * metodo static = 
+		 */
+			
+		Venda venda = new Venda();
+		Produto produto = new Produto();
+		Cliente cliente =new Cliente ();
+		Endereco endereco = new Endereco();
+		
+		cliente.setEndereco(endereco);
+		venda.setCliente(cliente);
+		venda.setProduto(produto);
+		
+		endereco.setLogradouro(Magica.s("Logradouro"));
+		endereco.setNumero(Magica.s("Numero"));	
+		endereco.setCidade(Magica.s("Cidade"));
+		
+		
+		//preencheria todos de endereco
+		
+		produto.setDescricao(Magica.s(("Descrição Produto"));
+		produto.setQtde(Magica.i("Quantidade"));
+		produto.setValorVenda(Magica.f("Valor Venda"));
+		//preencheria todos os de produto
+		
+		venda.setTotal(150);
+		venda.setData("02/10/2020");
+		venda.setNotafiscal(15);
+		//preencheria todos de venda
+		
+		System.out.println(venda.getAll());
+		
+		
+		
+		
+		
+	}
+}
+

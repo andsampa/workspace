@@ -1,0 +1,22 @@
+package br.com.ecommerce.implantacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.ecommerce.modelo.Cliente;
+import br.com.ecommerce.modelo.Produto;
+
+public class ClienteTeste {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Cliente cl= new Cliente ();
+		Produto pd= new Produto ();
+		pd.se	
+		cl.setAll(
+				Integer.parseInt(JOptionPane.showInputDialog("ID"), 
+				JOptionPane.showInputDialog("Nome")), 
+				endereco);
+	}
+
+}

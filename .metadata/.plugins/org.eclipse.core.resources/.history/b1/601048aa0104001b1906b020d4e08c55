@@ -1,0 +1,41 @@
+package br.com.lojauati.modelo;
+
+public class Televisao {
+	
+	private int canal;
+	private int volume;
+	private boolean status;
+	
+	public String ExibirTudo() {
+		return
+				"Canal.....: " + canal + "\n" +
+				"Volume....: " + volume + "\n" +
+				"Status....: " + status;
+		
+	}
+		
+	public void preencherVolume (int pVolume) {
+		if (pVolume>0) {
+			volume=pVolume;
+		}
+	}
+	
+	public void preencherCanal (int pCanal) {
+		if (pCanal>0 || pCanal<=67) {
+			canal=pCanal;
+					
+		}
+	}
+	
+	public void preencherStatus (boolean pStatus) {
+		if (pStatus= (String) "L") {
+			System.out.println("Televisão Ligada");
+		}
+			else {
+				System.out.println("Televisão Desligada");
+				
+			
+		}
+	}
+
+}

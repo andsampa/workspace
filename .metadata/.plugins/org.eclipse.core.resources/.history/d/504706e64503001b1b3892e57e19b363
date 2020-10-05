@@ -1,0 +1,13 @@
+package br.com.lojauati.teste;
+
+public class TesteFormula1 {
+
+	public static void main(String[] args) {
+		/*
+		 * 
+		 */
+		Formmula1 objeto;
+
+	}
+
+}

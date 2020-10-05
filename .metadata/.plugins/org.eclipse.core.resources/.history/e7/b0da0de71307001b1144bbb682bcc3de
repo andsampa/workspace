@@ -1,0 +1,26 @@
+package br.com.universidade.implementacao;
+
+import br.com.universidade.modelo.Formacao;
+import br.com.universidade.modelo.Pos;
+/*encapsulamento, polimorfismo, herança
+ * Polimorfismo metodo com os mesmo nomes com ações diferentes.
+ * 2 tipos poliformismo
+ * -Overload (sobrecarga)- qdo os metodos estão na mesm classe ( ações com  nomes com ações  diferentes)
+ * -Override (sobrescrita): qdo metodos estão em classes diferentes.
+ * 
+ */
+
+public class TesteFinal {
+
+	public static void main(String[] args) {
+		Formacao f=new Pos();
+		f.setValor(5000);
+		f.definirDuracao();
+		System.out.println(f.calcularMensalidade((float)0.05));
+		System.out.print(f.getDuracao());
+		
+		
+
+	}
+
+}

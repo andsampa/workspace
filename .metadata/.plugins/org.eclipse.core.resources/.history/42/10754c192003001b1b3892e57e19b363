@@ -1,0 +1,17 @@
+package repeticao;
+
+public class DesafioRepeticao {
+
+	public static void main(String[] args) {
+		/*
+		 * Jogador 1: vai digitar um número inteiro
+		 * Jogador 2: tem que descobrir esse numero
+		 * Exibir o parabens para o jogador2 quando ele descobrir
+		 * Atualizações
+		 * -o Jogador 2 irá receber dicas quando não acerta
+		 * -no final tem que exibir qtas tentativas foram utilizadas pelo Jogador2
+		 */
+
+	}
+
+}

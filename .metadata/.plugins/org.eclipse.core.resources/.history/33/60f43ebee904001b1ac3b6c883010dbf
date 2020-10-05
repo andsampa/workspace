@@ -1,0 +1,52 @@
+package br.com.universidade.modelo;
+
+public class Curso {
+	
+	private String sigla;
+	private String dataLancamento;
+	private Formacao formacao;
+	
+		
+	
+
+	
+		
+	public String getAll() {
+		return
+				"Sigla: " + sigla + "\n" +
+				"DataLancamento: " + dataLancamento;
+	}
+	
+	public void setAll(String sigla, String dataLancamento) {
+		this.sigla = sigla;
+		this.dataLancamento = dataLancamento;
+	}
+	
+	
+	
+	
+	public Curso() {
+		super();
+	}
+	public Curso(String sigla, String dataLancamento) {
+		super();
+		this.sigla = sigla;
+		this.dataLancamento = dataLancamento;
+	}
+	public String getSigla() {
+		return sigla;
+	}
+	public void setSigla(String sigla) {
+		this.sigla = sigla;
+	}
+	public String getDataLancamento() {
+		return dataLancamento;
+	}
+	public void setDataLancamento(String dataLancamento) {
+		this.dataLancamento = dataLancamento;
+	}
+	
+	
+
+}
+

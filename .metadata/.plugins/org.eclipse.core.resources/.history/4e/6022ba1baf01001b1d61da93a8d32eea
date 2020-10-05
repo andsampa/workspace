@@ -1,0 +1,13 @@
+package variaveis;
+
+public class Variavel {
+	//Variavel é um espaço temporário na memoria RAM onde
+	// você armazena UM dado.
+	public static void main(String[] args) {
+		//Sintaxe para criar variaveis
+		//<tipo do dado> <nome da variavel>;
+		String nome=""; 
+
+	}
+
+}

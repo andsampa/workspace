@@ -1,0 +1,29 @@
+package br.com.universidade.implementacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.universidade.modelo.Professor;
+
+public class TesteProfessor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Professor professor= new Professor ();
+				
+		professor.setAll(
+				Integer.parseInt(JOptionPane.showInputDialog("ID")),
+				JOptionPane.showInputDialog("NOME").toUpperCase(),
+				Float.parseFloat(JOptionPane.showInputDialog("valor hora")),
+				JOptionPane.showInputDialog("FORMAÇÃO"));
+		
+		
+		System.out.println(professor.getAll());
+		
+	}
+	
+	
+	
+
+	
+}

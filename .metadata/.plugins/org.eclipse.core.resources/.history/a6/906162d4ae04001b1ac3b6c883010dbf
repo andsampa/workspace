@@ -1,0 +1,45 @@
+package br.com.ecommerce.implantacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.ecommerce.modelo.Cliente;
+import br.com.ecommerce.modelo.Endereco;
+import br.com.ecommerce.modelo.Produto;
+import br.com.ecommerce.modelo.Venda;
+
+public class VendaTeste {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Endereco end= new Endereco();
+		
+		Venda vd= new Venda();
+		Produto pd= new Produto();
+		pd.setAll(id, descricao, qtde, valorCompra, valorVenda, endereco);
+		
+		
+		vd.setAll(
+				Integer.parseInt(JOptionPane.showInputDialog("NotaFiscal")),
+				JOptionPane.showInputDialog("Data"),
+				Float.parseFloat(JOptionPane.showInputDialog("Total")),
+				produto,
+				cliente);
+		
+		System.out.println(vd.getAll());
+		
+		
+		
+		
+		Cliente ct= new Cliente();
+		
+		vd.setAll(
+				Integer.parseInt("notafiscal"),
+				JOptionPane.showInputDialog("data"),
+				Float.parseFloat("total"), 
+				produto,
+				cliente);
+			
+
+	}
+
+}
